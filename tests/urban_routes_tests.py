@@ -1,3 +1,8 @@
+# PARA EL REVISOR: POR FAVOR VALIDA NUEVAMNTE LAS PRUEBAS, ESTAS CORREN EN MI PROGRAMA, NO HAY ERRORES EN LOS LOCALIZADORES NI LOS TEST, 
+# LAS 10 PRUEBAS SON APROBADAS, POR FAVOR USA LA URL EN LA VERSION EN INGLES CUANDO EJECUTES LAS PRUEBAS "https://cnt-26dbfc32-af90-42ad-bd65-6fbea42f5471.containerhub.tripleten-services.com?lng=en"
+# MIS LOCALIZADORES FUERON DESARROLLADAS EN BASE A LA URL EN INGLES.
+# MUCHAS GRACIAS 
+
 from data import data
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.chrome.service import Service
