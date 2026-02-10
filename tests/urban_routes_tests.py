@@ -1,5 +1,4 @@
 from data import data
-import time
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.chrome.service import Service
 from pages.urban_routes_pages import UrbanRoutesPage
