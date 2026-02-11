@@ -348,9 +348,11 @@ class UrbanRoutesPage:
         Returns:
             WebElement containing driver details
         """
+        # Wait for timer to disappear (search complete)
         WebDriverWait(self.driver, 40).until(
             EC.invisibility_of_element_located(self.car_search_timer)
         )
+        # Then wait for and return driver details
         return self.wait.until(
             EC.visibility_of_element_located(self.driver_details)
         )
