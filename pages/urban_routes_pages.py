@@ -177,6 +177,7 @@ class UrbanRoutesPage:
         """Get the displayed phone number after successful verification."""
         return self.wait.until(EC.visibility_of_element_located(self.phone_number_display_text)).text
 
+    # Payment method methods
     def get_payment_method_button(self):
         """Wait for and return the payment method button element."""
         return self.wait.until(
@@ -250,6 +251,7 @@ class UrbanRoutesPage:
         )
 
     def get_payment_method_close_button(self):
+        """Wait for and return the payment modal close button element."""
         return self.wait.until(
             EC.element_to_be_clickable(self.payment_method_close_button)
         )
@@ -258,71 +260,97 @@ class UrbanRoutesPage:
         """Wait for and return the payment modal close button element."""
         self.get_payment_method_close_button().click()
 
+    # Comment for driver methods
     def get_comment_for_driver_field(self):
+        """Wait for and return the driver comment input field element."""
         return self.wait.until(
             EC.visibility_of_element_located(self.comment_for_driver_field)
         )
 
     def set_comment_for_driver_field(self):
+        """
+        Enter a comment for the driver from test data.
+        
+        Comment text is retrieved from data.message_for_driver.
+        """
         comment_field = self.get_comment_for_driver_field()
         comment_field.send_keys(data.message_for_driver)
 
     def get_comment_for_driver_value(self):
+        """Get the current value of the driver comment field."""
         return self.get_comment_for_driver_field().get_attribute('value')
 
+    # Order requirement method
     def get_order_requirements_button(self):
+        """Wait for and return the order requirement section element."""
         return self.wait.until(
             EC.visibility_of_element_located(self.order_requirements_button)
         )
 
+    # Blanket and handkerchiefs methods
     def get_blanket_and_handkerchiefs_slider(self):
+        """Wait for and return the blanket and handkerchiefs toggle slider."""
         return self.wait.until(
             EC.element_to_be_clickable(self.blanket_and_handkerchiefs_slider)
         )
 
+    def click_on_blanket_and_handkerchiefs_slider(self):
+        """Toggle the blanket and handkerchiefs option ON."""
+        self.get_blanket_and_handkerchiefs_slider().click()
+
     def get_blanket_slider_input(self):
+        """Wait for and return the blanket toggle input element."""
         return self.wait.until(
             EC.presence_of_element_located(self.blanket_and_handkerchiefs_input)
         )
 
-    def click_on_blanket_and_handkerchiefs_slider(self):
-        self.get_blanket_and_handkerchiefs_slider().click()
-
+    # Ice cream counter methods
     def get_ice_cream_counter_plus_button(self):
+        """Wait for and return the ice cream increment button."""
         return self.wait.until(
             EC.element_to_be_clickable(self.ice_cream_counter_plus_button)
         )
 
+    def click_on_ice_cream_counter_plus_button(self):
+        """Increment the ice cream quantity by clicking the plus button."""
+        self.get_ice_cream_counter_plus_button().click()
+
     def get_ice_cream_counter_plus_value(self):
+        """Wait for and return the ice cream counter value element."""
         return self.wait.until(
             EC.visibility_of_element_located(self.ice_cream_counter_plus_value)
         )
 
-    def click_on_ice_cream_counter_plus_button(self):
-        self.get_ice_cream_counter_plus_button().click()
-
+    # Booking methods
     def get_book_taxi_button(self):
+        """Wait for and return the 'Book taxi' button element."""
         return self.wait.until(
             EC.visibility_of_element_located(self.book_taxi_button)
         )
 
     def click_on_book_taxi_button(self):
+        """Click the 'Book taxi' button to start the taxi search."""
         self.get_book_taxi_button().click()
 
     def get_car_search_timer(self):
+        """Wait for and return the car search timer element."""
         return self.wait.until(
             EC.visibility_of_element_located(self.car_search_timer)
         )
 
     def get_driver_details_after_timer(self):
+         """
+        Wait for the search timer to disappear, then return driver details.
+        
+        This method waits up to 40 seconds for the car search to complete
+        and driver information to appear.
+        
+        Returns:
+            WebElement containing driver details
+        """
         WebDriverWait(self.driver, 40).until(
             EC.invisibility_of_element_located(self.car_search_timer)
         )
         return self.wait.until(
             EC.visibility_of_element_located(self.driver_details)
         )
-
-
-
-
-
