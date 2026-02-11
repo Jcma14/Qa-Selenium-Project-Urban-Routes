@@ -220,7 +220,7 @@ class UrbanRoutesPage:
         )
 
     def set_card_code_field(self):
-         """
+        """
         Enter the card CVV code from test data.
 
         Card code is retrieved from data.card_code.
@@ -339,7 +339,7 @@ class UrbanRoutesPage:
         )
 
     def get_driver_details_after_timer(self):
-         """
+        """
         Wait for the search timer to disappear, then return driver details.
         
         This method waits up to 40 seconds for the car search to complete
