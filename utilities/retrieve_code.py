@@ -4,9 +4,27 @@ from selenium.common import WebDriverException
 
 
 def retrieve_phone_code(driver) -> str:
-    """Este código devuelve un número de confirmación de teléfono y lo devuelve como un string.
-    Utilízalo cuando la aplicación espere el código de confirmación para pasarlo a tus pruebas.
-    El código de confirmación del teléfono solo se puede obtener después de haberlo solicitado en la aplicación."""
+    """
+    Retrieve SMS verification code from browser performance logs.
+    
+    This function extracts the phone verification code that is sent
+    during the phone number confirmation process. It searches through
+    the browser's performance logs to find the API response containing
+    the code.
+    
+    Args:
+        driver: Selenium WebDriver instance with performance logging enabled
+        
+    Returns:
+        String containing the SMS verification code
+        
+    Raises:
+        WebDriverException: If code cannot be retrieved from logs
+        
+    Note:
+        Requires Chrome driver with performance logging capability enabled:
+        options.set_capability("goog:loggingPrefs", {"performance": "ALL"})
+    """
 
     code = None
     for i in range(10):
