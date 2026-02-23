@@ -3,9 +3,9 @@
 # 🚖 Urban Routes Project
 ### Selenium Automated Testing
 
-![Python](https://img.shields.io/badge/Python-3.14.-blue?style=for-the-badge&logo=python)
-![Selenium](https://img.shields.io/badge/Selenium-4.40.-green?style=for-the-badge&logo=selenium)
-![Pytest](https://img.shields.io/badge/Pytest-9.0.-orange?style=for-the-badge&logo=pytest)
+![Python](https://img.shields.io/badge/Python-3.14-blue?style=for-the-badge&logo=python)
+![Selenium](https://img.shields.io/badge/Selenium-4.40-green?style=for-the-badge&logo=selenium)
+![Pytest](https://img.shields.io/badge/Pytest-9.0-orange?style=for-the-badge&logo=pytest)
 ![Status](https://img.shields.io/badge/Status-Active-success?style=for-the-badge)
 
 </div>
