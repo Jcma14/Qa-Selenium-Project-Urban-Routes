@@ -1,14 +1,6 @@
-<div align="center">
-  
-# 🚖 Urban Routes Project
-### Selenium Automated Testing
+# Urban Routes — Selenium Automated Testing
 
-![Python](https://img.shields.io/badge/Python-3.14-blue?style=for-the-badge&logo=python)
-![Selenium](https://img.shields.io/badge/Selenium-4.40-green?style=for-the-badge&logo=selenium)
-![Pytest](https://img.shields.io/badge/Pytest-9.0-orange?style=for-the-badge&logo=pytest)
-![Status](https://img.shields.io/badge/Status-Active-success?style=for-the-badge)
-
-</div>
+End-to-end automated tests for a taxi booking service, built on the Page Object Model.
 
 --- 
 
@@ -167,22 +159,10 @@ message_for_driver = 'I am wearing red'
 
 ---
 
-## 👨‍💻 Author
+## Author
 
-***Camilo — QA Engineer in Training***
+Camilo Morales — built during the QA Engineering bootcamp at TripleTen, showing hands-on work with Selenium WebDriver and automated UI testing.
 
-📌 *This project was developed as part of my QA Engineering Bootcamp and learning journey and showcases hands-on experience with Selenium WebDriver and automated UI testing.*
+I'm now studying a Master of Cyber Security at Edith Cowan University in Perth. Software testing is the background I came from, and it still shapes how I work: read the specification carefully, break things deliberately, document exactly what happens.
 
-If you want to connect:
-
-<p align="left">
-  <a href="https://github.com/Jcma14">
-    <img src="https://img.shields.io/badge/GitHub-Profile-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Badge"/>
-  </a>
-  <br>
-    <a href="https://www.linkedin.com/in/camilo-morales-qa/">
-    <img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Badge"/>
-  </a>
-</p>
-
-**Thank you for reviewing this project!** 🚀
+[GitHub](https://github.com/Jcma14) · [LinkedIn](https://www.linkedin.com/in/camilo-morales-cs)
